@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AC Artclub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-container">
+        <header id="header" class="header">
+            <div id="logo" class="logo logo--xl">
+                <a href="#top">
+                    <img src="assets/AC_patch--rust-aqua.png" alt="AC Artclub logo">
+                </a>
+            </div>
+        </header>
+        <div class="cover"></div>
+        <nav class="nav">
+            <a href="#about" class="button">Over</a>
+            <a href="#calendar" class="button">Kalender</a>
+            <a href="#contact" class="button">Contact</a>
+        </nav>
+        <main class="main wrap-l">
+            <h1 class="hidden">AC Artclub</h1>
+            <section class="section" id="about">
+                <div class="section__heading">
+                    <h2>
+                        Over
+                    </h2>
+                </div>
+                <div class="section__content wrap-m">
+                    <p>
+                        A.C. Artclub is de plek waar kunst niet alleen wordt bekeken, maar vooral samen wordt beleefd. Hier draait het om ontmoeten, maken, ontdekken en inspireren.
+                    </p>
+                    <p>
+                        Iedereen is welkom, of je nu veel ervaring hebt of gewoon nieuwsgierig bent. Samen verkennen we materialen en ideeën, delen we verhalen en laten we ons verrassen door wat er ontstaat.
+                    </p>
+                    <p>
+                        Word deel van de club en ervaar hoe kunst, creativiteit, poëzie en verbeelding, en hoe we samen iets magisch kunnen maken.
+                    </p>
+                </div>
+            </section>
+            <section class="section" id="calendar">
+                <div class="section__heading">
+                    <h2>
+                        Kalender
+                    </h2>
+                </div>
+                <div class="section__content wrap-m">
+                    <div class="calendar">
+                        <div class="calendar__item">
+                            <h3>
+                                Weefgierig
+                            </h3>
+                            <p>
+                                11 oktober 18:00
+                            </p>
+                            <p>
+                                S/ash Gallery
+                            </p>
+                            <p>
+                                Weven, breien of haken gaat over het leggen van verbindingen. Door draden over, onder en door elkaar te laten lopen vormen de losse elementen een geheel. Net zoals de wereld door losse strengen bijeen wordt gehouden, ontstaat in een textielweefsel een herkenbaar beeld of patroon – complexer en genuanceerder dan op het eerste gezicht zichtbaar is. We werken samen, leren van en met elkaar, en creëren een tijdelijke maar betekenisvolle ontmoeting rond kunst en textiel.
+                            </p>
+                            <p>
+                                Meld je aan!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="contact">
+                <div class="section__heading">
+                    <h2>
+                        Contact
+                    </h2>
+                </div>
+                <div class="section__content wrap-m">
+                    <p>Meld je aan voor de nieuwsbrief en mis nooit meer een clubavond.</p>
+                    <p>Volg ons op @a.c.artclub</p>
+                    <p>Mail ons <a href="mailto:mail@acart.club">mail@acart.club</a></p>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <a href="#top" class="footer__arrow-up button"></a>
+        </footer>
+    </div>
+    <div class="background">
+        <div class="background__1"></div>
+        <div class="background__0"></div>
+        <div class="background__1"></div>
+        <div class="background__0"> </div>
+        <div class="background__1"></div>
+        <div class="background__0"></div>
+        <div class="background__1"></div>
+        <div class="background__0"> </div>
+        <div class="background__1"></div>
+    </div>
+</body>
+<script>
+    window.onscroll = function () {
+    logoSize();
+    };
+
+    function logoSize() {
+    const logo = document.getElementById("logo");
+    if (!logo) return;
+
+    const scrolled = document.body.scrollTop > 1 || document.documentElement.scrollTop > 100;
+    logo.classList.toggle("logo--xl", !scrolled);
+    }
+</script>
+</html>
