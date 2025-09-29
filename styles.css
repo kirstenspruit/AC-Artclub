@@ -43,14 +43,14 @@
 
     /* || SEMANTIC */
     --color_background_primary:     var(--color_white);
-    --color_background_secondary:   var(--color_aqua);
-    --color_background_tertiary:    var(--color_rust);
-    --color_text_normal:            var(--color_rust);
-    --color_text_muted:             var(--color_aqua);
+    --color_background_secondary:   var(--color_grass);
+    --color_background_tertiary:    var(--color_blue);
+    --color_text_normal:            var(--color_blue);
+    --color_text_muted:             var(--color_grass);
     --color_text_highlighted:       var(--color_white);
     --color_text_hover: ;
-    --color_border_normal:          var(--color_rust);
-    --color_border_muted:           var(--color_aqua);
+    --color_border_normal:          var(--color_blue);
+    --color_border_muted:           var(--color_grass);
 
     --spacing_outer-margin:         0 var(--spacing_m);
     --spacing_section-margin:       var(--spacing_s) 0;
